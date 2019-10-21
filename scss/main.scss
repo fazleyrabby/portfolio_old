@@ -7,10 +7,6 @@ $colors: (
   white-darken: darken(white,50%)
 );
 
-.dark-icon{
-  color: #111;
-}
-
 $mobile : 479px;
 $tablet : 768px;
 
@@ -81,6 +77,12 @@ body {
       }
   }
       .switch {
+        @include tablet{
+          position: relative;
+        }
+        @include mobile{
+          position: absolute;
+        }
         position: absolute;
         display: inline-block;
         width: 40px;
@@ -109,9 +111,7 @@ body {
               }
             } 
           }
-          @include tablet{
-            display: none;
-          }
+          
       }
     
       
@@ -244,7 +244,7 @@ section{
 .profile-img{
 
   @include mobile{
-    opacity: 0.5;
+    // opacity: 0.5;
   }
 }
 

@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
-.dark-icon {
-  color: #111;
-}
-
 .container {
   max-width: 950px;
 }
@@ -68,6 +64,18 @@ body {
   height: 18px;
 }
 
+@media (max-width: 768px) {
+  .navbar .switch {
+    position: relative;
+  }
+}
+
+@media (max-width: 479px) {
+  .navbar .switch {
+    position: absolute;
+  }
+}
+
 .navbar .switch input {
   opacity: 0;
   width: 0;
@@ -87,12 +95,6 @@ body {
 .navbar .switch input:focus + .slider {
   -webkit-box-shadow: 0 0 1px #2196F3;
           box-shadow: 0 0 1px #2196F3;
-}
-
-@media (max-width: 768px) {
-  .navbar .switch {
-    display: none;
-  }
 }
 
 .navbar .slider {
@@ -202,12 +204,6 @@ section .head::before {
 
 .skill-set ul li i {
   margin-right: 10px;
-}
-
-@media (max-width: 479px) {
-  .profile-img {
-    opacity: 0.5;
-  }
 }
 
 .portfolio .portfoilo-img {
