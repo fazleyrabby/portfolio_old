@@ -1,16 +1,37 @@
-document.getElementsByTagName("body")[0].setAttribute("id", "custom-scroll");
+const body = document.getElementsByTagName("BODY")[0];
+
+const navbar = document.getElementsByClassName("navbar")[0];
+
+const toggle = document.querySelector("#switch");
+
+const icons = document.querySelectorAll(".contact-links li a");
+
+body.setAttribute("id", "custom-scroll");
 
 
-// // set timeout onDomReady
-// $(function() {
-//   setTimeout(delayedFragmentTargetOffset, 500);
-// });
+toggle.onchange = () => { 
+if (toggle.checked == true){
+  body.style.color = '#fff';
+  body.style.backgroundImage = 'linear-gradient(#000000c7, #000000c7), url(../images/bgImg.jpg)';
+  for(let i = 0; i < icons.length; i++){
+    icons[i].style.color = '#fff';
+  }
+  
+}
+else{
+  body.style.color = '#111'; 
+  navbar.style.color = '#111'; 
+  body.style.backgroundColor = '#fff';
+  navbar.style.backgroundColor = '#fff'; 
+  body.style.backgroundImage = 'none';
+  for(let i = 0; i < icons.length; i++){
+    icons[i].style.color = '#111';
+  }
 
-// // add scroll offset to fragment target (if there is one)
-// function delayedFragmentTargetOffset(){
-//   var offset = $(':target').offset();
-//   if(offset){
-//       var scrollto = offset.top - 80; // minus fixed header height
-//       $('html, body').animate({scrollTop:scrollto}, 0);
-//   }
-// }
+}
+
+};
+
+
+
+
