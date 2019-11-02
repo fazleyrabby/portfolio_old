@@ -1,6 +1,6 @@
 # Portfolio
 
-- Technology 
+## Technology 
 
   Static Website made with HTML,CSS and bootstrap 4.1 
 
