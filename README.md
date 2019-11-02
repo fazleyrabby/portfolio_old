@@ -4,7 +4,7 @@
 
   Static Website made with HTML,CSS and bootstrap 4.1 
 
-  Used a little bit of javascript for scrolling purpose.
+  Vanilla JS used for scrolling and Theme Color Toggle (Dark/Light Theme)
 
 
 
