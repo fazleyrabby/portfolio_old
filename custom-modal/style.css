@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  /* overflow: hidden; */
+  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
+  
+}
+h2{text-align: center;}
+xmp{
+  background: #ccc4;
+  padding: 15px;
+  white-space: pre-wrap;
+  word-wrap:break-word;
+  font-family: source code pro,menlo,fira code, consolas, monospace;
+}
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-items: center;
+  justify-content: center;
+}
+.documentation{
+  display: block;
+  font-size: 12px;
+  padding: 25px;
+  margin:10px 30px 50px 25px;
+  box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.3);
+}
+.documentation p {
+  margin: 10px;
+}
+
+.modalBtn{
+  outline: 0;
+  padding: 15px;
+  background: coral;
+  color: #fff;
+  border:none;
+  cursor: pointer;
+  margin: 10px;
+}
+.closeBtn{ 
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
+}
+.closeBtn:hover, 
+.closeBtn:focus{
+  color: #111;
+}
+.modal{
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  animation: modalAnimation;
+  animation-duration: 0.5s;
+}
+
+.modal-content{
+  margin: 10% auto;
+  background: #fff;
+  width: 50%;
+  box-shadow: 0 5px 8px 0px rgba(0, 0, 0, 0.2),
+              0 10px 10px 0px rgba(0, 0, 0, 0.1);
+  
+}
+
+.modal-header span{
+  font-size: 20px;
+}
+.modal-header{
+  background: cornflowerblue;
+  color: #fff;
+  padding: 10px;
+}
+.modal-body{
+  padding: 10px;
+}
+.modal-footer{
+  border-top: 1px solid #ccc3;
+  background: cornflowerblue;
+  padding: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+@keyframes modalAnimation{
+  from{ opacity: 0;}
+  to{ opacity: 1;}
+}
+
+.download{
+  font-size: 14px;
+  margin-top: 10px;
+}
+.download-link{
+  text-decoration: none;
+  color: #fff;
+  background: cornflowerblue;
+  padding: 4px;
+  font-size: 10px;
+}
+.download-link:hover{
+  color: #ccc;
+}
+
+.portfolio{
+  text-decoration: none;
+  font-weight: bold;
+  color: #222;
+}
+
+
+
+footer{
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  padding: 10px;
+  background: #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

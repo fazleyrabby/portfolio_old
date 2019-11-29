@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Modal</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Simple HTML,CSS,Vanilla JS Modal</h2>
+  <div class="wrapper">
+      <button id="modal" class="modalBtn">Modal</button>
+
+      <button id="modal2" class="modalBtn">Modal2</button>
+  
+      <button id="modal3" class="modalBtn">Modal3</button>
+  
+      <div data-modal="#modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header"><span><strong>This is a title</strong></span>
+            <span class="closeBtn">&times;</span>
+          </div>
+          <div class="modal-body"><p>This is modal body</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, porro!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, porro!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, porro!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, porro!</p>
+          </div>
+          <div class="modal-footer"><p>This is footer</p></div>
+        </div>
+      </div>
+      
+  
+      <div data-modal="#modal2" class="modal">
+        <div class="modal-content">
+          <div class="modal-header"><span><strong>This is title 2</strong></span>
+            <span class="closeBtn">&times;</span>
+          </div>
+          <div class="modal-body"><p>This is modal body 2</p></div>
+          <div class="modal-footer"><p>This is footer 2</p></div>
+        </div>
+      </div>
+  
+      <div data-modal="#modal3" class="modal">
+        <div class="modal-content">
+          <div class="modal-header"><span><strong>This is title 3</strong></span>
+            <span class="closeBtn">&times;</span>
+          </div>
+          <div class="modal-body"><p>This is modal body 3</p></div>
+          <div class="modal-footer"><p>This is footer 3</p></div>
+        </div>
+      </div>
+  </div>
+  
+    <div class="documentation">
+      <p>CSS and JS <small>(Scroll down to get the links)</small></p>
+      <xmp><link rel="stylesheet" href="style.css">
+<script src="modal.js"></script></xmp>
+      <p>For modal buttons and assign any of your required ID (id="modal") name like below :</p>
+      <xmp><button id="modal" class="modalBtn">Modal</button></xmp>
+      <p>For modal content body make sure you give the 'data-modal' attribute name same as the button id (data-modal="#modal") and a classname "modal" as shown below :</p>
+      <xmp><div data-modal="#modal" class="modal">...</xmp>
+      <p>Make sure you also have this close button with the class name of "closeBtn" :</p>
+      <xmp><div data-modal="#modal" class="modal">
+      <div class="modal-content">
+          <div class="modal-header"><span>title here</span>
+                <span class="closeBtn">close button</span>
+              </div>...</xmp>
+      <p>Full HTML syntax given below</p>
+      <xmp><button id="modal" class="modalBtn">Modal</button>
+      <div data-modal="#modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header"><span><strong>Title here</strong></span>
+              <span class="closeBtn">close button (use your own icon)</span>
+            </div>
+            <div class="modal-body"><p>Modal body here</p>
+            </div>
+            <div class="modal-footer"><p>footer here</p></div>
+          </div>
+        </div></xmp>
+        
+        <div class="download">
+          Download full plugin frow this link <a class="download-link" href="modal-dist.zip">Click here!</a>
+        </div>
+    </div>
+
+    <footer>Created By &copy; <a class="portfolio" href="https://fazleyrabby.github.io">Fazley Rabbi</a> - <span id="date"></span></footer>
+
+    <script src="modal.js"></script>
+</body>
+</html>
