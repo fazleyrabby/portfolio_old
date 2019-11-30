@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Modal</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="timeout-alert.css">
+</head>
+<body>
+  <h2>Simple HTML,CSS,JS Auto timeout alert</h2>
+  <div class="wrapper">
+      <div data-alert="#tm-alert" class="tm-alert">
+        <div class="tm-alert-content">
+          <div class="tm-alert-header"><span><strong>This is an alert title</strong></span>
+            <span class="closeBtn">&times;</span>
+          </div>
+          <div class="tm-alert-body"><p>This is alert body</p>
+          </div>
+          <div class="tm-alert-footer"><p>This is alert footer</p></div>
+        </div>
+      </div>    
+  </div>
+  
+    <div class="documentation">
+      <p>Link CSS and JS</p>
+      <xmp><link rel="stylesheet" href="timeout-alert.css">
+<script src="timeout-alert.js"></script></xmp>
+      <p>For alert content body make sure you set the 'data-alert' attribute and a class name of "tm-alert" to get the custom styling</p>
+      <xmp><div data-alert="#tm-alert" class="tm-alert">...</xmp>
+      <p>Make sure you also have this close button with the class name of "closeBtn" :</p>
+      <xmp><div data-alert="#tm-alert" class="tm-alert">
+          <div class="tm-alert-content">
+            <div class="tm-alert-header"><span><strong>This is an alert title</strong></span>
+              <span class="closeBtn">CLOSE BUTTON</span>
+            </div></xmp>
+      <p>Full HTML syntax given below</p>
+      <xmp><div class="wrapper">
+          <div data-alert="#tm-alert" class="tm-alert">
+            <div class="tm-alert-content">
+              <div class="tm-alert-header"><span><strong>This is an alert title</strong></span>
+                <span class="closeBtn">&times;</span>
+              </div>
+              <div class="tm-alert-body"><p>This is alert body</p>
+              </div>
+              <div class="tm-alert-footer"><p>This is alert footer</p></div>
+            </div>
+          </div>    
+      </div></xmp>
+      <p>If you want to set a custom timeout(Not mandatory) to auto hide the alert just call this function of "timoutAlertInSeconds(seconds) which take an parameter of seconds"</p>
+      <xmp><script>
+          timeoutAlertInSeconds(10);
+</script></xmp>
+      <div class="download">
+          Download full plugin frow this link <a class="download-link" href="tm-alert-dist.zip">Click here!</a>
+          <br>
+          <br>
+          Link to Codepen <a class="download-link" href="https://codepen.io/fazley_rabby">Click here!</a>
+        </div>
+
+
+    </div>
+    <footer>Created By &copy; <a class="portfolio" href="https://fazleyrabby.github.io">Fazley Rabbi</a> - <span id="date"></span></footer>
+    
+    <script src="timeout-alert.js"></script>
+
+    <script>
+        timeoutAlertInSeconds(5);
+    </script>
+</body>
+</html>
