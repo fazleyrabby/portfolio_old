@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Euphoria+Script&display=swap');
+
+$logo-font : 'Euphoria Script', cursive;
+$primary: #512DA8; 
+$default: #673AB7; 
+$light-primary: #D1C4E9; 
+$light-text: #FFFFFF; 
+$accent: #536DFE; 
+$dark-text: #212121; 
+$secondary-text: #757575; 
+$border-color: #BDBDBD; 
+$gradient: linear-gradient(#0000009c, #0000009c);
+$bg-dark: #111;
+$bg-light: #fff;
+$font: 'PT Sans', sans-serif;
+$min-height: 100vh;
+$shadow: 0 1px 5px 1px rgba(0,0,0,0.1);
+
+
+
+.btn{
+    text-decoration: none;
+    padding: 5px;
+    border:0;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    transition: 200ms background ease-in; 
+    border-radius: 5px;
+    box-shadow: 1px 4px 7px 1px rgba(0,0,0, 0.1) ;
+}
+
+.btn-primary{
+    background: $accent;
+    color: #fff;
+    &:hover{
+        background: $primary;
+    }
+}
+
+
+.btn-default{
+    background: $default;
+    color: #fff;
+    &:hover{
+        background: $primary;
+    }
+}
+
+
+
+
+
