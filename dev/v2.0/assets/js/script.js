@@ -1,14 +1,12 @@
 const body = document.getElementsByTagName("body")[0];
+
 body.setAttribute("id", "custom-scroll");
 
-// let navActive = document.querySelectorAll('nav ul li a');
+const sections = document.querySelectorAll('section');
 
-// navActive.forEach(function(each){
-//    each.addEventListener('click',function(e){
-//     each.classList.toggle = "active";
-// }) 
-// })
-
+const options = {
+    threshold: 0.5
+}
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 const topScrollBtn = document.getElementById("myBtn");
@@ -27,3 +25,21 @@ topScrollBtn.addEventListener('click', () => {
 
 
 
+
+let observer = new IntersectionObserver(navCheck, options);
+
+function navCheck(elms){
+    elms.forEach(elm => {
+       const id = elm.target.getAttribute('id');
+       const activeAnchor = document.querySelector(`[data-page=${id}]`);
+       if (elm.isIntersecting) {
+         activeAnchor.classList.add('active');
+       }else{
+         activeAnchor.classList.remove('active');
+       }
+    })
+}
+
+sections.forEach(section =>{
+    observer.observe(section);
+})
