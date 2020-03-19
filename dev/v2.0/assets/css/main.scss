@@ -474,21 +474,14 @@ section
       justify-content: space-between;
       align-items: center;
       justify-items: center;
+      .active-card { opacity: 1!important; 
+        a{
+          pointer-events: inherit !important;
+        }
+      }
       .card{
         position: relative;
         opacity: 0.5;
-        &::before{
-          content: 'DEMO';
-          opacity: 1;
-          font-family: monospace;
-          font-size: 40px;
-          font-weight: 700;
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          pointer-events: none;
-          transform: translate(-50%, -50%);
-        }
         width: 25%;
         @include mobile{
           width: 100%;

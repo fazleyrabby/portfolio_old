@@ -935,24 +935,18 @@ section::before {
   }
 }
 
+.portfolio .portfolio-cards .active-card {
+  opacity: 1 !important;
+}
+
+.portfolio .portfolio-cards .active-card a {
+  pointer-events: inherit !important;
+}
+
 .portfolio .portfolio-cards .card {
   position: relative;
   opacity: 0.5;
   width: 25%;
-}
-
-.portfolio .portfolio-cards .card::before {
-  content: 'DEMO';
-  opacity: 1;
-  font-family: monospace;
-  font-size: 40px;
-  font-weight: 700;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  pointer-events: none;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 @media (max-width: 479px) {
