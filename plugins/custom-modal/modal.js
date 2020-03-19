@@ -2,9 +2,14 @@ const modalBtn = document.querySelectorAll('.modalBtn');
 const modalContent = document.querySelectorAll('[data-modal]');
 const closeBtn = document.querySelectorAll('.closeBtn');
 
-modalBtn.forEach(element =>{
+modalContent.forEach(e => {
+	console.log(e.dataset.modal);
+})
+
+modalBtn.forEach(element => {
   element.addEventListener('click', (e)=>{
     showModal(e);
+
   })
 });
 
